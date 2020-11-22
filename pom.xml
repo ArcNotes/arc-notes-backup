@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com</groupId>
-    <artifactId>anotes</artifactId>
+    <artifactId>arcnotes</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>anotes</name>
-    <description>ANotes backend</description>
+    <name>arcnotes</name>
+    <description>ArcNotes backup server</description>
 
     <properties>
         <java.version>11</java.version>

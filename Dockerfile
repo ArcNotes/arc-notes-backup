@@ -1,12 +1,12 @@
 FROM alpine:edge
 MAINTAINER coarsehorse
-COPY . /anotes
+COPY . /arcnotes
 RUN apk add --no-cache \
     openjdk11 \
     maven
-WORKDIR /anotes
+WORKDIR /arcnotes
 RUN mvn clean install
-WORKDIR /anotes/target
+WORKDIR /arcnotes/target
 ENTRYPOINT ["/usr/bin/java"]
-CMD ["-jar", "anotes-0.0.1-SNAPSHOT.jar"]
+CMD ["-jar", "arcnotes-0.0.1-SNAPSHOT.jar"]
 EXPOSE 8080
