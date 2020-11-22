@@ -1,5 +1,8 @@
-# ANotes backup server
-Backup server for ANotes app
+# ArcNotes backup server
+
+Backup server for ArcNotes clients
+
+Open Android client: [link](https://github.com/ArcNotes/arc-notes-android-client)
 
 ## Features:
 + Backup/restore user notes
@@ -15,14 +18,14 @@ Backup server for ANotes app
 ## Docker
 
 ### Deploy & run with docker-compose
-+ `cd anotes-backend/` # project root
++ `cd arc-notes-backup/` # project root
 + `docker-compose up` # deploy app + db
 
 ### Clean run
-+ `cd anotes-backend/` # project root
++ `cd arc-notes-backup/` # project root
 + `docker-compose stop` # stop app + db
 + `docker-compose rm` # remove app + db
-+ `docker-compose up --build` # deploy new app + db
++ `docker-compose up --build -d` # deploy new app + db
 
 ## API short notation
 
